@@ -1,12 +1,13 @@
 name: Simple CI pipeline
+
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
+  
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
